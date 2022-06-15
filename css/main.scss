@@ -7,8 +7,8 @@
 //Globals-----------------------------------------------------------
 $green: #569060;
 $blue: #195070;
-$white: #222;
-$grey: rgb(248, 248, 248);
+$white: rgb(248, 248, 248);
+$grey: #222;
 
 html {
     scroll-behavior: smooth;
@@ -41,27 +41,28 @@ body {
 //Index------------------------------------------------------------
 //Nav------------------------------
 nav {
-    background-color: $white;
+    top: 0;
+    position: sticky;
     width: 100%;
-    height: 70px;
+    margin: 50px 0 0 0;
 
     .nav-wrapper {
         display: grid;
         grid-template-columns: 200px 1fr;
         grid-template-rows: 70px;
+        background-color: $white;
+
 
         .nav-logo {
-            margin: 15px 0 0 15px;
-
+            margin-left: 20px;
             svg {
     
-                text {
-                    font: 45px 'Kanit';
+                text, text.logo-text2 {
+                    font: 40px 'Kanit';
                     fill: $white;
                 }
 
                 text.logo-text2 {
-                    font: 40px 'Kanit';
                     fill: $grey;
                 }
             }
@@ -101,12 +102,15 @@ nav {
 //Header---------------------------
 header {
     background-color: blue;
+    min-height: 100vh;
 }
 //Main-----------------------------
 main {
     background-color: green;
+    height: 1500px;
 }
 //Footer---------------------------
 footer {
     background-color: yellow;
+    height: 300px;
 }

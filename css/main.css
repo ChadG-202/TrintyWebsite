@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', arial;
-  background: #222;
+  background: #f8f8f8;
   font-size: 16px;
   font-weight: 300;
 }
@@ -31,9 +31,11 @@ body iframe {
 }
 
 nav {
-  background-color: #222;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
-  height: 70px;
+  margin: 50px 0 0 0;
 }
 
 nav .nav-wrapper {
@@ -43,20 +45,20 @@ nav .nav-wrapper {
       grid-template-columns: 200px 1fr;
   -ms-grid-rows: 70px;
       grid-template-rows: 70px;
+  background-color: #f8f8f8;
 }
 
 nav .nav-wrapper .nav-logo {
-  margin: 15px 0 0 15px;
+  margin-left: 20px;
 }
 
-nav .nav-wrapper .nav-logo svg text {
-  font: 45px 'Kanit';
-  fill: #222;
+nav .nav-wrapper .nav-logo svg text, nav .nav-wrapper .nav-logo svg text.logo-text2 {
+  font: 40px 'Kanit';
+  fill: #f8f8f8;
 }
 
 nav .nav-wrapper .nav-logo svg text.logo-text2 {
-  font: 40px 'Kanit';
-  fill: #f8f8f8;
+  fill: #222;
 }
 
 nav .nav-wrapper .nav-links ul {
@@ -71,7 +73,7 @@ nav .nav-wrapper .nav-links ul li {
 }
 
 nav .nav-wrapper .nav-links ul li a {
-  color: #f8f8f8;
+  color: #222;
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
   padding: 8px;
@@ -82,7 +84,7 @@ nav .nav-wrapper .nav-links ul li a:hover {
 }
 
 nav .nav-wrapper .nav-links ul li a.new {
-  border: solid 1.5px #f8f8f8;
+  border: solid 1.5px #222;
 }
 
 nav .nav-wrapper .nav-links ul li a.new:hover {
@@ -91,13 +93,16 @@ nav .nav-wrapper .nav-links ul li a.new:hover {
 
 header {
   background-color: blue;
+  min-height: 100vh;
 }
 
 main {
   background-color: green;
+  height: 1500px;
 }
 
 footer {
   background-color: yellow;
+  height: 300px;
 }
 /*# sourceMappingURL=main.css.map */
