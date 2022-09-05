@@ -52,91 +52,106 @@ nav {
     grid-row: 1/2;
     margin: 35px 0 0 0;
 
-    .nav-wrapper {
-        display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-template-rows: 70px;
-        transition: 0.5s ease;
-
-        .nav-logo {
-            margin-left: 15px;
-            svg {
+    .monitor{
+        .nav-wrapper {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 70px;
+            transition: 0.5s ease;
+            overflow: hidden;
     
-                text, text.logo-text2 {
-                    font: 40px 'Kanit';
-                    fill: $white;
-                }
+            .nav-logo {
+                -webkit-transition: all 0.6s ease;
+                transition: all 0.6s ease;
+                margin-left: -170px;
 
-                text.logo-text2 {
-                    fill: $grey;
+                svg {
+        
+                    text, text.logo-text2 {
+                        font: 40px 'Kanit';
+                        fill: $white;
+                    }
+    
+                    text.logo-text2 {
+                        fill: $grey;
+                    }
                 }
             }
-        }
+    
+            .nav-links {
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                padding-right: 28vw;
+                min-width: 760px;
 
-        .nav-links {
-            ul.snip1135 {
-                display: block;
-                float: right;
-                margin: 18.07px 0 0 0;
-
-                * {
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                    -webkit-transition: all 0.35s ease;
-                    transition: all 0.35s ease;
-                }
-
-                li {
-                    display: inline-block;
-                    list-style: outside none none;
-                    padding: 0;
-                    margin-right: 30px;
-                    
-                    a {
-                        color: rgb(94, 94, 94);
-                        padding: 8px;
-                        transition: 0.2s;
-                        position: relative;
-                        text-decoration: none;
-                        display: inline-block;
-                    }
-
-                    a:before {
-                        position: absolute;
-                        content: '';
+                ul.snip1135 {
+                    display: block;
+                    float: right;
+                    margin: 18.07px 0 0 0;
+    
+                    * {
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
                         -webkit-transition: all 0.35s ease;
                         transition: all 0.35s ease;
-                        opacity: 0;
-                        top: 25%;
-                        bottom: 25%;
-                        left: 0;
-                        right: 0;
-                        border-top: 3px solid #34495e;
-                        border-bottom: 3px solid #34495e;
                     }
-
-                    a:hover{
+    
+                    li {
+                        display: inline-block;
+                        list-style: outside none none;
+                        padding: 0;
+                        margin-right: 30px;
+                        
+                        a {
+                            color: rgb(94, 94, 94);
+                            padding: 8px;
+                            transition: 0.2s;
+                            position: relative;
+                            text-decoration: none;
+                            display: inline-block;
+                        }
+    
+                        a:before {
+                            position: absolute;
+                            content: '';
+                            -webkit-transition: all 0.35s ease;
+                            transition: all 0.35s ease;
+                            opacity: 0;
+                            top: 25%;
+                            bottom: 25%;
+                            left: 0;
+                            right: 0;
+                            border-top: 3px solid #34495e;
+                            border-bottom: 3px solid #34495e;
+                        }
+    
+                        a:hover{
+                            color: black;
+                        }
+    
+                        a:hover:before{
+                            opacity: 1;
+                            top: 0;
+                            bottom: 0;
+                        }
+                    }
+    
+                    li.current a{
                         color: black;
                     }
-
-                    a:hover:before{
+    
+                    li.current a:before{
                         opacity: 1;
                         top: 0;
                         bottom: 0;
                     }
                 }
-
-                li.current a{
-                    color: black;
-                }
-
-                li.current a:before{
-                    opacity: 1;
-                    top: 0;
-                    bottom: 0;
-                }
             }
         }
+    }
+
+    .phone{
+        display: none;
     }
 }
 //Header---------------------------

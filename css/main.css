@@ -50,7 +50,7 @@ nav {
   margin: 35px 0 0 0;
 }
 
-nav .nav-wrapper {
+nav .monitor .nav-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 200px 1fr;
@@ -59,42 +59,52 @@ nav .nav-wrapper {
       grid-template-rows: 70px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  overflow: hidden;
 }
 
-nav .nav-wrapper .nav-logo {
-  margin-left: 15px;
+nav .monitor .nav-wrapper .nav-logo {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  margin-left: -170px;
 }
 
-nav .nav-wrapper .nav-logo svg text, nav .nav-wrapper .nav-logo svg text.logo-text2 {
+nav .monitor .nav-wrapper .nav-logo svg text, nav .monitor .nav-wrapper .nav-logo svg text.logo-text2 {
   font: 40px 'Kanit';
   fill: #f8f8f8;
 }
 
-nav .nav-wrapper .nav-logo svg text.logo-text2 {
+nav .monitor .nav-wrapper .nav-logo svg text.logo-text2 {
   fill: #222;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 {
+nav .monitor .nav-wrapper .nav-links {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-right: 28vw;
+  min-width: 760px;
+}
+
+nav .monitor .nav-wrapper .nav-links ul.snip1135 {
   display: block;
   float: right;
   margin: 18.07px 0 0 0;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 * {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 li {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 li {
   display: inline-block;
   list-style: outside none none;
   padding: 0;
   margin-right: 30px;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 li a {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 li a {
   color: #5e5e5e;
   padding: 8px;
   -webkit-transition: 0.2s;
@@ -104,7 +114,7 @@ nav .nav-wrapper .nav-links ul.snip1135 li a {
   display: inline-block;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 li a:before {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 li a:before {
   position: absolute;
   content: '';
   -webkit-transition: all 0.35s ease;
@@ -118,24 +128,28 @@ nav .nav-wrapper .nav-links ul.snip1135 li a:before {
   border-bottom: 3px solid #34495e;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 li a:hover {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 li a:hover {
   color: black;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 li a:hover:before {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 li a:hover:before {
   opacity: 1;
   top: 0;
   bottom: 0;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 li.current a {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 li.current a {
   color: black;
 }
 
-nav .nav-wrapper .nav-links ul.snip1135 li.current a:before {
+nav .monitor .nav-wrapper .nav-links ul.snip1135 li.current a:before {
   opacity: 1;
   top: 0;
   bottom: 0;
+}
+
+nav .phone {
+  display: none;
 }
 
 header {
