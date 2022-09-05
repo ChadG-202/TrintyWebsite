@@ -158,10 +158,19 @@ nav {
 header {
     grid-column: 1/-1;
     grid-row: 1/2;
+
+    #heroVid {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
 }
 //Main-----------------------------
 main {
-    background-color: green;
+    background-color: $white;
     grid-column: 1/-1;
     grid-row: 2/3;
 }
