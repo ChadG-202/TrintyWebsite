@@ -6,7 +6,7 @@ $(document).ready(function(){
             $(".nav-logo").css({"margin-left":"20px"});   
         }
         else{
-            $(".nav-wrapper").css({"background-color":"transparent"});
+            $(".nav-wrapper").css({"background-color":"rgba(248, 248, 248, 0.287)"});
             $(".nav-links").css({"padding-right":"28vw"}); 
             $(".nav-logo").css({"margin-left":"-170px"});   
         }

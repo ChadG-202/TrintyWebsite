@@ -53,6 +53,7 @@ nav {
 nav .monitor .nav-wrapper {
   display: -ms-grid;
   display: grid;
+  background-color: rgba(248, 248, 248, 0.287);
   -ms-grid-columns: 200px 1fr;
       grid-template-columns: 200px 1fr;
   -ms-grid-rows: 70px;
@@ -87,7 +88,7 @@ nav .monitor .nav-wrapper .nav-links {
 nav .monitor .nav-wrapper .nav-links ul.snip1135 {
   display: block;
   float: right;
-  margin: 18.07px 0 0 0;
+  margin: 16.07px 0 0 0;
 }
 
 nav .monitor .nav-wrapper .nav-links ul.snip1135 * {
@@ -105,8 +106,9 @@ nav .monitor .nav-wrapper .nav-links ul.snip1135 li {
 }
 
 nav .monitor .nav-wrapper .nav-links ul.snip1135 li a {
-  color: #5e5e5e;
+  color: #3f3f3f;
   padding: 8px;
+  font-weight: 400;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
